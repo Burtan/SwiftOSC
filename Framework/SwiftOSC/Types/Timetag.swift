@@ -32,7 +32,7 @@ extension Timetag: OSCType {
     public var secondsSinceNow: Double {
         get {
             if self > 0 {
-                return Double((self - Date().oscTimetag) / 0x1_0000_0000)
+                return 0.0
             } else {
                 return 0.0
             }
